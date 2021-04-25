@@ -10,6 +10,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         .myNavbar li {
             padding-right: 20px;
@@ -40,21 +42,24 @@
             background-color: rgba(120, 160, 221, 0.788);
         }
 
-        #latestAnnouncement{
+        #latestAnnouncement {
             border-bottom: 10px cornflowerblue solid;
             border-radius: 10%;
         }
-        #latestAnnouncement h1{
+
+        #latestAnnouncement h1 {
             margin: 0 0;
             text-align: center;
             background: linear-gradient(-135deg, transparent 10px, cornflowerblue 0);
             width: 220px;
         }
-        #News{
+
+        #News {
             border-bottom: 10px rgb(39, 133, 35) solid;
             border-radius: 10%;
         }
-        #News h1{
+
+        #News h1 {
             margin: 0 0;
             text-align: center;
             background: linear-gradient(-135deg, transparent 10px, rgb(39, 133, 35) 0);
@@ -64,7 +69,7 @@
 
 </head>
 
-<body>
+<body style="background:url(images/38bg.jpg) no-repeat center;background-size: cover;">
     <!-- Header -->
     <div
         style="border-bottom:10px rgba(120, 160, 221) solid ;background: url(images/header-home2.png) no-repeat center;background-size: 100% 100%;">
@@ -83,8 +88,8 @@
                             <a class="text-white nav-link" href="index.html">首頁</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 關於我們
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -94,8 +99,8 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 招生訊息
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -105,8 +110,8 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 教學課程
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -115,8 +120,8 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 家長專區
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -140,24 +145,24 @@
     <!-- Main -->
     <div>
         <div class="container p-3">
-            <div class="bg-dark pl-3 mb-3 text-center" style="font-size: 50px;font-weight: bold;color: coral;border-bottom: coral 2px solid;">師資陣容</div>
+            <div class="bg-dark pl-3 mb-3 text-center"
+                style="font-size: 50px;font-weight: bold;color: coral;border-bottom: coral 2px solid;">師資陣容</div>
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="row mb-3" style="border-right: coral 2px solid;">
-                        <div class="col-lg-8 text-right">
-                            <span style="font-size: 20px;font-weight: bold;"> 許乙清 教授</span>
-                            <br>教育主張：以學生為本位，讓每個孩子都能適才適性地發揮。
+                    <div class="row mb-3" style="border-right: coral 2px solid;" data-aos="fade-right" data-aos-duration="500">
+                        <div class="col-lg-8" style="background-color: rgba(238, 198, 113, 0.945);">
+                            <p class="text-right my-0" style="font-size: 20px;font-weight: bold;"> 許乙清 教授</p>
+                            教育主張：以學生為本位，讓每個孩子都能適才適性地發揮。
                             <br>教育理念：重視學生的人格及道德教育。不放棄任何一位學生。培養學生的自學能力。
                         </div>
                         <div class="col-lg-4">
                             <img class="img-fluid " src="images/people01.jpg" alt="">
                         </div>
                     </div>
-                    <div class="row mb-3" style="border-right: coral 2px solid;">
-                        <div class="col-lg-8 text-right">
-                            <span style="font-size: 20px;font-weight: bold;"> 林易泉 教授</span>
-                           
-                            <br>給成功孩子的話：
+                    <div class="row mb-3" style="border-right: coral 2px solid;" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="col-lg-8" style="background-color: rgba(238, 198, 113, 0.945);">
+                            <p class="text-right my-0" style="font-size: 20px;font-weight: bold;"> 林易泉 教授</p>
+                            給成功孩子的話：
                             <br>不故步自封，才能在變化中求進步。
                             <br>不好大喜功，才能在守成中求成長。
                             <br>要努力面前，更得要向著標竿直跑。
@@ -166,11 +171,10 @@
                             <img class="img-fluid" src="images/people03.jpg" alt="">
                         </div>
                     </div>
-                    <div class="row mb-3" style="border-right: coral 2px solid;">
-                        <div class="col-lg-8 text-right">
-                            <span style="font-size: 20px;font-weight: bold;"> 陳君毅 老師</span>
-                           
-                            <br>發表論文：探討閱讀策略融入數學教學對高中學生的影響
+                    <div class="row mb-3" style="border-right: coral 2px solid;" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="col-lg-8" style="background-color: rgba(238, 198, 113, 0.945);">
+                            <p class="text-right my-0" style="font-size: 20px;font-weight: bold;"> 陳君毅 教授</p>
+                            發表論文：探討閱讀策略融入數學教學對高中學生的影響
                             <br>教育主張：因才施教
                             <br>給成功孩子的話：成功 = 1% 天賦 + 99% 努力
                         </div>
@@ -178,11 +182,10 @@
                             <img class="img-fluid" src="images/people05.jpg" alt="">
                         </div>
                     </div>
-                    <div class="row mb-3" style="border-right: coral 2px solid;">
-                        <div class="col-lg-8 text-right">
-                            <span style="font-size: 20px;font-weight: bold;"> 洪鵬凱 老師</span>
-                           
-                            <br>發表論文：數學史融入教學對高一學生數學學習成效影響之研究
+                    <div class="row mb-3" style="border-right: coral 2px solid;" data-aos="fade-right" data-aos-duration="2000">
+                        <div class="col-lg-8" style="background-color: rgba(238, 198, 113, 0.945);">
+                            <p class="text-right my-0" style="font-size: 20px;font-weight: bold;"> 洪鵬凱 教授</p>
+                            發表論文：數學史融入教學對高一學生數學學習成效影響之研究
                             <br>教育理念：數學之前，人人平等，規範之下，人人自由
                             <br>教育主張：耐心,愛心與尊重
                         </div>
@@ -192,58 +195,60 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="row mb-3">
+                    <div class="row mb-3" data-aos="fade-left" data-aos-duration="500">
                         <div class="col-lg-4">
                             <img class="img-fluid" src="images/people02.jpg" alt="">
                         </div>
-                        <div class="col-lg-8 text-left">
+                        <div class="col-lg-8 text-left" style="background-color: rgba(238, 198, 113, 0.945);">
                             <span style="font-size: 20px;font-weight: bold;"> 許永和 教授</span>
-                           
-                            <br>發表論文：在多路相同信號重疊時辨別個別信號的參數估計 (Estimation paramaters of the individaul signals in a multipath signal )
+
+                            <br>發表論文：在多路相同信號重疊時辨別個別信號的參數估計 (Estimation paramaters of the individaul signals in a
+                            multipath signal )
                             <br>相關研究：尋找 sinθ, ,可為代數數之多項式及其推論
                         </div>
                     </div>
-                    <div class="row mb-3">
+                    <div class="row mb-3" data-aos="fade-left" data-aos-duration="1000">
                         <div class="col-lg-4">
                             <img class="img-fluid" src="images/people04.jpg" alt="">
                         </div>
-                        <div class="col-lg-8 text-left">
+                        <div class="col-lg-8 text-left" style="background-color: rgba(238, 198, 113, 0.945);">
                             <span style="font-size: 20px;font-weight: bold;"> 黃建宏 教授</span>
-                           
+
                             <br>相關研究：「數學之美」行動研究
                             <br>教育理念：成功三年, 永遠保固
                             <br>教育主張：身體力行做學問，積極努力求知識。
                         </div>
                     </div>
-                    <div class="row mb-3">
+                    <div class="row mb-3" data-aos="fade-left" data-aos-duration="1500">
                         <div class="col-lg-4">
                             <img class="img-fluid" src="images/people06.jpg" alt="">
                         </div>
-                        <div class="col-lg-8 text-left">
+                        <div class="col-lg-8 text-left" style="background-color: rgba(238, 198, 113, 0.945);">
                             <span style="font-size: 20px;font-weight: bold;"> 蘇慧珍 老師</span>
-                           
+
                             <br>個人著作：
-                            Some Remarks on the Spectrum for Schrodinger-type Operators, Master thesis (1994), National Tsing Hua University.
-                            
+                            Some Remarks on the Spectrum for Schrodinger-type Operators, Master thesis (1994), National
+                            Tsing Hua University.
+
                         </div>
                     </div>
-                    <div class="row mb-3">
+                    <div class="row mb-3" data-aos="fade-left" data-aos-duration="2000">
                         <div class="col-lg-4">
                             <img class="img-fluid" src="images/people08.jpg" alt="">
                         </div>
-                        <div class="col-lg-8 text-left">
+                        <div class="col-lg-8 text-left" style="background-color: rgba(238, 198, 113, 0.945);">
                             <span style="font-size: 20px;font-weight: bold;"> 蔡佳燕 老師</span>
-                           
+
                             <br>相關研究：
                             <br>數學史融入教學 － 以畢達哥拉斯為例
                             <br>數學王牌融入教學行動研究
                             高膽數學教具競賽
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <!-- End Main -->
@@ -266,7 +271,7 @@
             </div>
             <p class="text-white m-0">國立虎尾科技大學 National Formosa University &copy; All RIGHTS RESERVED.</p>
         </div>
- 
+
     </footer>
     <!-- End Footer -->
 
@@ -282,7 +287,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
     <!-- Function -->

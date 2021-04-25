@@ -13,6 +13,8 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         .myNavbar li {
             padding-right: 20px;
@@ -67,7 +69,7 @@
             width: 220px;
         }
     </style>
-
+    
 </head>
 
 <body>
@@ -79,7 +81,7 @@
             <img style="width: 70%;" src="images/title-img2.png" alt="">
             <!-- Navbar -->
             <nav class="p-0 myNavbar navbar-scroll navbar navbar-expand-xl navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                <button class="navbar-toggler bg-info" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -145,8 +147,8 @@
     <!-- End Header -->
     <div style="background:url(images/educationbg2.jpg) no-repeat;background-size: 100% 100%;">
         <div class="container pt-3" style="font-family: 'Noto Sans TC', sans-serif;padding-bottom: 10%;">
-            <div class="bg-dark pl-3" style="font-size: 50px;font-weight: bold;color: coral;border-bottom: coral 2px solid;">教育理念</div>
-            <div class="row">
+            <div class="bg-dark pl-3 text-center" style="font-size: 50px;font-weight: bold;color: coral;border-bottom: coral 2px solid;">教育理念</div>
+            <div class="row" data-aos="zoom-in">
                 <div class="col-lg-6 p-5 my-5" style="background:url(images/education01-1.PNG) no-repeat center;background-size: 100% 100%;">
                     <div class="row">
                         <div class="col-2"
@@ -163,7 +165,7 @@
                     <img style="box-shadow:3px 3px 12px pink;width:460px;" class="img-fluid rounded-circle" src="images/education01.PNG" alt="">
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="zoom-in">
                 <div class="col-lg-6 p-5 my-5" style="background:url(images/education01-1.PNG) no-repeat center;background-size: 100% 100%;">
                     <div class="row">
                         <div class="col-2"
@@ -181,7 +183,7 @@
                     <img style="box-shadow:3px 3px 12px pink;width:460px;" class="img-fluid rounded-circle" src="images/education02.PNG" alt="">
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="zoom-in">
                 <div class="col-lg-6 p-5 my-5" style="background:url(images/education01-1.PNG) no-repeat center;background-size: 100% 100%;">
                     <div class="row">
                         <div class="col-2"
@@ -197,7 +199,7 @@
                     <img style="box-shadow:3px 3px 12px pink;width:460px;" class="img-fluid rounded-circle" src="images/education03.PNG" alt="">
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="zoom-in">
                 <div class="col-lg-6 p-5 my-5" style="background:url(images/education01-1.PNG) no-repeat center;background-size: 100% 100%;">
                     <div class="row">
                         <div class="col-2"
@@ -220,8 +222,25 @@
 
 
         <!-- Footer -->
-        <footer class="text-center bg-dark py-5">
-            <p class="text-white m-0">Copyright &copy; Your Website 2011</p>
+        <footer class="text-center bg-dark py-5 text-white">
+            <div class="container">
+                <div class="row" style="border-bottom: white 1px solid;">
+                    <div class="col-lg-6">
+                        <div>校務資訊聯絡單位：秘書室 </div>
+                        <div>E-Mail：secretary@nfu.edu.tw</div>
+                        <div>電話：886-5-6315000 </div>
+                        <div>傳真：886-5-6315999</div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div>地址：632301 雲林縣虎尾鎮文化路64號 No.64</div>
+                        <div> 版權聯絡單位：電算中心網路組 </div>
+                        <div>E-Mail：network@nfu.edu.tw</div>
+                        <div>若您對本站資料之版權有疑慮，請與網路組聯絡。</div>
+                    </div>
+                </div>
+                <p class="text-white m-0">國立虎尾科技大學 National Formosa University &copy; All RIGHTS RESERVED.</p>
+            </div>
+    
         </footer>
         <!-- End Footer -->
 
@@ -237,9 +256,11 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-
-
-
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
         <!-- Function -->
         <script>
             $(function () {
