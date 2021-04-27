@@ -67,7 +67,7 @@
 
 </head>
 
-<body>
+<body style="background:url(img/back.jpg) no-repeat center;background-size: cover;">
     <!-- Header -->
     <div
         style="border-bottom:10px rgba(120, 160, 221) solid ;background: url(images/header-home2.png) no-repeat center;background-size: 100% 100%;">
@@ -76,7 +76,7 @@
             <img style="width: 70%;" src="images/title-img2.png" alt="">
             <!-- Navbar -->
             <nav class="p-0 myNavbar navbar-scroll navbar navbar-expand-xl navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                <button class="navbar-toggler bg-info" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -91,10 +91,9 @@
                                 關於我們
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">教育理念</a>
-                                <a class="dropdown-item" href="#">校園介紹</a>
-                                <a class="dropdown-item" href="#">設施介紹</a>
-                                <a class="dropdown-item" href="#">師資陣容</a>
+                                <a class="dropdown-item" href="educationConcept.html">教育理念</a>
+                                <a class="dropdown-item" href="school_introduction.html">校園介紹</a>
+                                <a class="dropdown-item" href="teacher.html">師資陣容</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -103,8 +102,8 @@
                                 招生訊息
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">招生訊息</a>
-                                <a class="dropdown-item" href="#">入學FAQ</a>
+                                <a class="dropdown-item" href="">招生訊息</a>
+                                <a class="dropdown-item" href="">入學FAQ</a>
                                 <a class="dropdown-item" href="#">收退費辦法</a>
                             </div>
                         </li>
@@ -132,7 +131,7 @@
                             <a class="text-white nav-link" href="apply.html">申請入學</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-white nav-link" href="video.html">活動影片區</a>
+                            <a class="text-white nav-link" href="video.html">活動相簿區</a>
                         </li>
                     </ul>
                 </div>
@@ -143,12 +142,8 @@
     <!-- End Header -->
 
     <div class="container"
-        style="background-color:rgba(45, 188, 255, 0.267);padding-top: 50px; padding-bottom: 50px;padding-left: 50px; padding-right: 50px;">
-        <div class="row">
-            <div>
-                <h1 style="color: blue;"><b>活動相簿</b> </h1>
-            </div>
-        </div>
+        style="background-color:rgba(45, 213, 255, 0.671);padding-top: 50px; padding-bottom: 50px;padding-left: 50px; padding-right: 50px;">
+        <div class="bg-dark pl-3 text-center" style="font-size: 50px;font-weight: bold;color: coral;border-bottom: coral 2px solid;">活動相簿</div> <br>
 
         <!-- https://www.wfublog.com/2019/10/nanogallery2-cascading-justified-layout.html -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -220,8 +215,25 @@
     </div>
 
     <!-- Footer -->
-    <footer class="text-center bg-dark py-5">
-        <p class="text-white m-0">Copyright &copy; Your Website 2011</p>
+    <footer class="text-center bg-dark py-5 text-white">
+        <div class="container">
+            <div class="row" style="border-bottom: white 1px solid;">
+                <div class="col-lg-6">
+                    <div>校務資訊聯絡單位：秘書室 </div>
+                    <div>E-Mail：secretary@nfu.edu.tw</div>
+                    <div>電話：886-5-6315000 </div>
+                    <div>傳真：886-5-6315999</div>
+                </div>
+                <div class="col-lg-6">
+                    <div>地址：632301 雲林縣虎尾鎮文化路64號 No.64</div>
+                    <div> 版權聯絡單位：電算中心網路組 </div>
+                    <div>E-Mail：network@nfu.edu.tw</div>
+                    <div>若您對本站資料之版權有疑慮，請與網路組聯絡。</div>
+                </div>
+            </div>
+            <p class="text-white m-0">國立虎尾科技大學 National Formosa University &copy; All RIGHTS RESERVED.</p>
+        </div>
+
     </footer>
     <!-- End Footer -->
 

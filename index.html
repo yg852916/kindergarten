@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="hover.css" rel="stylesheet">
     <style>
         .myNavbar li {
             padding-right: 20px;
@@ -40,21 +41,24 @@
             background-color: rgba(120, 160, 221, 0.788);
         }
 
-        #latestAnnouncement{
+        #latestAnnouncement {
             border-bottom: 10px cornflowerblue solid;
             border-radius: 10%;
         }
-        #latestAnnouncement h1{
+
+        #latestAnnouncement h1 {
             margin: 0 0;
             text-align: center;
             background: linear-gradient(-135deg, transparent 10px, cornflowerblue 0);
             width: 220px;
         }
-        #News{
+
+        #News {
             border-bottom: 10px rgb(39, 133, 35) solid;
             border-radius: 10%;
         }
-        #News h1{
+
+        #News h1 {
             margin: 0 0;
             text-align: center;
             background: linear-gradient(-135deg, transparent 10px, rgb(39, 133, 35) 0);
@@ -65,6 +69,7 @@
 </head>
 
 <body>
+    <!-- http://ianlunn.github.io/Hover/#effects -->
     <!-- Header -->
     <div
         style="border-bottom:10px rgba(120, 160, 221) solid ;background: url(images/header-home2.png) no-repeat center;background-size: 100% 100%;">
@@ -73,41 +78,40 @@
             <img style="width: 70%;" src="images/title-img2.png" alt="">
             <!-- Navbar -->
             <nav class="p-0 myNavbar navbar-scroll navbar navbar-expand-xl navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                <button class="navbar-toggler bg-info" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div style="font-size: 20px;font-weight: 900;" class="collapse navbar-collapse" id="navbarNav">
                     <ul class="myNavbar navbar-nav ml-auto mr-auto">
                         <li class="nav-item active">
-                            <a class="text-white nav-link" href="#">首頁</a>
+                            <a class="text-white nav-link" href="index.html">首頁</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 關於我們
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">教育理念</a>
-                                <a class="dropdown-item" href="#">校園介紹</a>
-                                <a class="dropdown-item" href="#">設施介紹</a>
-                                <a class="dropdown-item" href="#">師資陣容</a>
+                                <a class="dropdown-item" href="educationConcept.html">教育理念</a>
+                                <a class="dropdown-item" href="school_introduction.html">校園介紹</a>
+                                <a class="dropdown-item" href="teacher.html">師資陣容</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 招生訊息
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">招生訊息</a>
-                                <a class="dropdown-item" href="#">入學FAQ</a>
+                                <a class="dropdown-item" href="">招生訊息</a>
+                                <a class="dropdown-item" href="">入學FAQ</a>
                                 <a class="dropdown-item" href="#">收退費辦法</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 教學課程
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -116,20 +120,20 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 家長專區
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">接送辦法</a>
-                                <a class="dropdown-item" href="#">聯絡我們</a>
+                                <a class="dropdown-item" href="pickup.html">接送辦法</a>
+                                <a class="dropdown-item" href="connection.html">聯絡我們</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="text-white nav-link" href="#">申請入學</a>
+                            <a class="text-white nav-link" href="apply.html">申請入學</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-white nav-link" href="#">活動影片區</a>
+                            <a class="text-white nav-link" href="video.html">活動相簿區</a>
                         </li>
                     </ul>
                 </div>
@@ -176,144 +180,257 @@
     </div>
     <!-- End carousel  -->
 
+    <div style="background: url(images/index-bg.png);background-size:100%;">
     <!-- Latest News -->
-    <div class="container mt-3">
+    <div class="container pt-3">
         <div id="latestAnnouncement">
             <h1>最新公告</h1>
         </div>
-        <div class="accordion" id="accordionExample">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <div class="mb-0 row">
-                        <div class="col-8">
-                            <button style="font-size: 20px;" class="btn btn-link btn-block text-left" type="button"
-                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                aria-controls="collapseOne">
-                                兒童美語班3/20確定開課
-                                <footer style="display: inline-block;" class="blockquote-footer">by <cite title="Source Title">許教授</cite></footer>
-                            </button>
-                        </div>
-                        <div class="col-4 text-right"
-                            style="line-height: 40px;font-size: 18px;color: rgb(34, 116, 155);">
-                            2021/03/23
-                        </div>
-                    </div>
-                </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                    data-parent="#accordionExample">
-                    <div class="card-body">
-                        雙人報名一人<code>免費</code>
 
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <!-- first page -->
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <div class="mb-0 row">
+                                <div class="col-8">
+                                    <button style="font-size: 20px;" class="btn btn-link btn-block text-left"
+                                        type="button" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        兒童美語班3/20確定開課
+                                        <footer style="display: inline-block;" class="blockquote-footer">by <cite
+                                                title="Source Title">許教授</cite></footer>
+                                    </button>
+                                </div>
+                                <div class="col-4 text-right"
+                                    style="line-height: 40px;font-size: 18px;color: rgb(34, 116, 155);">
+                                    2021/03/23
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                雙人報名一人<code>免費</code>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <div class="mb-0 row">
+                                <div class="col-8">
+                                    <button style="font-size: 20px;" class="btn btn-link btn-block text-left"
+                                        type="button" data-toggle="collapse" data-target="#collapseOne2"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        110/04/09(五)第二期教學大樓教室課程調整。
+                                        <footer style="display: inline-block;" class="blockquote-footer">by <cite
+                                                title="Source Title">行政處</cite></footer>
+                                    </button>
+                                </div>
+                                <div class="col-4 text-right"
+                                    style="line-height: 40px;font-size: 18px;color: rgb(34, 116, 155);">
+                                    2021/03/22
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseOne2" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                一、因應110/04/10(五)運動績優考試，故於 110/04/09(五)借用第二期教學大樓教室共10間，進行試務辦公室與試務場地布置。
+                                <br>二、懇請各教學單位協助通知授課教師及同學，於110/04/09(五)上述大樓教室調整如附件所示。
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <div class="mb-0 row">
+                                <div class="col-8">
+                                    <button style="font-size: 20px;" class="btn btn-link btn-block text-left"
+                                        type="button" data-toggle="collapse" data-target="#collapseOne3"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        語言中心外語學習園區課程將於3/15(一)開課囉！
+                                        <footer style="display: inline-block;" class="blockquote-footer">by <cite
+                                                title="Source Title">語言中心</cite></footer>
+                                    </button>
+                                </div>
+                                <div class="col-4 text-right"
+                                    style="line-height: 40px;font-size: 18px;color: rgb(34, 116, 155);">
+                                    2021/03/12
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseOne3" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                大家好，
+                                <br>外語學習園區課程將於下周一3/15(一)開始上課囉，
+                                <br>詳細課表如附件所示，歡迎同學到外語學習園區上課！
+
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- End first page -->
             </div>
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <div class="mb-0 row">
-                        <div class="col-8">
-                            <button style="font-size: 20px;" class="btn btn-link btn-block text-left" type="button"
-                                data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true"
-                                aria-controls="collapseOne">
-                                110/04/09(五)第二期教學大樓教室課程調整。
-                                <footer style="display: inline-block;" class="blockquote-footer">by <cite title="Source Title">行政處</cite></footer>
-                            </button>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <!-- two page -->
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <div class="mb-0 row">
+                                <div class="col-8">
+                                    <button style="font-size: 20px;" class="btn btn-link btn-block text-left"
+                                        type="button" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        公告本校新任校長遴選結果。
+                                        <footer style="display: inline-block;" class="blockquote-footer">by <cite
+                                                title="Source Title">人事室-黃瑾瑜</cite></footer>
+                                    </button>
+                                </div>
+                                <div class="col-4 text-right"
+                                    style="line-height: 40px;font-size: 18px;color: rgb(34, 116, 155);">
+                                    2021/02/22
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-4 text-right"
-                            style="line-height: 40px;font-size: 18px;color: rgb(34, 116, 155);">
-                            2021/03/22
-                        </div>
-                    </div>
-                </div>
-                <div id="collapseOne2" class="collapse" aria-labelledby="headingOne"
-                    data-parent="#accordionExample">
-                    <div class="card-body">
-                        一、因應110/04/10(五)運動績優考試，故於 110/04/09(五)借用第二期教學大樓教室共10間，進行試務辦公室與試務場地布置。
-                        <br>二、懇請各教學單位協助通知授課教師及同學，於110/04/09(五)上述大樓教室調整如附件所示。
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                本校校長遴選委員會業於110年4月21日召開第三次會議，以無記名投票方式作成決議，張信良教授獲全體委員過半數同意，獲選為本校第六任校長，將由本校依規定報請教育部聘任之。
 
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <div class="mb-0 row">
-                        <div class="col-8">
-                            <button style="font-size: 20px;" class="btn btn-link btn-block text-left" type="button"
-                                data-toggle="collapse" data-target="#collapseOne3" aria-expanded="true"
-                                aria-controls="collapseOne">
-                                語言中心外語學習園區課程將於3/15(一)開課囉！
-                                <footer style="display: inline-block;" class="blockquote-footer">by <cite title="Source Title">語言中心</cite></footer>
-                            </button>
-                        </div>
-                        <div class="col-4 text-right"
-                            style="line-height: 40px;font-size: 18px;color: rgb(34, 116, 155);">
-                            2021/03/12
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="collapseOne3" class="collapse" aria-labelledby="headingOne"
-                    data-parent="#accordionExample">
-                    <div class="card-body">
-                        大家好，
-                        <br>外語學習園區課程將於下周一3/15(一)開始上課囉，
-                        <br>詳細課表如附件所示，歡迎同學到外語學習園區上課！
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <div class="mb-0 row">
+                                <div class="col-8">
+                                    <button style="font-size: 20px;" class="btn btn-link btn-block text-left"
+                                        type="button" data-toggle="collapse" data-target="#collapseOne2"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        教育部青年教育與就業儲蓄帳戶方案-申請彈性選系
+                                        <footer style="display: inline-block;" class="blockquote-footer">by <cite
+                                                title="Source Title">行政處</cite></footer>
+                                    </button>
+                                </div>
+                                <div class="col-4 text-right"
+                                    style="line-height: 40px;font-size: 18px;color: rgb(34, 116, 155);">
+                                    2021/02/18
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseOne2" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                1. 適用對象:參加教育部「青年教育與就業儲蓄帳戶方案」學生。
+                                <br>2. 申請時間:110年4月30日前向學校申請彈性選系(請至教學業務組填寫轉系申請書)。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <div class="mb-0 row">
+                                <div class="col-8">
+                                    <button style="font-size: 20px;" class="btn btn-link btn-block text-left"
+                                        type="button" data-toggle="collapse" data-target="#collapseOne3"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        110年藝文季開幕式暨手作體驗活動
+                                        <footer style="display: inline-block;" class="blockquote-footer">by <cite
+                                                title="Source Title">學生事務處 黃光瑞</cite></footer>
+                                    </button>
+                                </div>
+                                <div class="col-4 text-right"
+                                    style="line-height: 40px;font-size: 18px;color: rgb(34, 116, 155);">
+                                    2021/01/20
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseOne3" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                一、本校謹訂於110年4月26日(一)11:00-12:20於學生活動中心前藝文廣場辦理110年藝文季「藝文樂興」開幕式暨手作體驗活動。
+                                <br>二、活動日為避免音量或活動影響授課狀況，敬請轉知授課講師，如造成不便敬請見諒。
+                                <br>三、惠請協助轉知所屬單位之教職員生，歡迎參與110年藝文季「藝文樂興」開幕式暨手作體驗活動，一同共襄盛舉。
 
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- End two page -->
             </div>
         </div>
+        <ul class="nav nav-pills mb-3 justify-content-center my-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                    aria-controls="pills-home" aria-selected="true">1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">2</a>
+            </li>
+        </ul>
     </div>
+
     <!-- End Latest News -->
 
     <!-- News -->
     <div class="container mt-3">
         <div id="News">
-            <h1>幼兒園新聞</h1>
+            <h1>幼兒園新聞<span style="color: rgb(194, 26, 26);">News</span></h1>
         </div>
-        <div class="row">
+        <div class="row myHomeButton">
+            <!-- one news -->
             <div class="my-3 col-12 col-lg-6">
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <img style="width: 100%;" src="images/news1-1.PNG" class="" alt="...">
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6" style="background-color: rgba(245, 245, 220, 0.856);">
                         <div class="media-body pb-3">
-                            <h5 class="mt-0">恭賀! </h5>
+                            <h5 class="mt-0" style="font-weight: bold;color: rgb(173, 115, 38);">恭賀! </h5>
                             <p>本校資工系陳國益副教授團隊參加2020年全國大專院校智慧應用創新創意競賽榮獲第二名及一組佳作
                             </p>
                             <!-- Button trigger modal -->
-                            <span style="cursor: pointer;position: absolute;bottom: 5%;right: 6%;" class="p-2 learn-more-btn badge badge-pill badge-warning"
-                                data-toggle="modal" data-target="#exampleModalCenter">Learn More...</span>
-    
+                            <span style="cursor: pointer;position: absolute;bottom: 5%;right: 6%;"
+                                class="hvr-pop p-2 learn-more-btn badge badge-pill badge-warning" data-toggle="modal"
+                                data-target="#exampleModalCenter">Learn More...</span>
+
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalCenterTitle">全國大專院校智慧應用創新創意競賽榮獲第二名及一組佳作 </h5>
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">
+                                                全國大專院校智慧應用創新創意競賽榮獲第二名及一組佳作 </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
                                             因應全球趨勢，智慧電子產業掌握關鍵技術與發展契機是各國政府相競推動的策略焦點。此競賽目的為激發學生創新與創意發想，強化企劃力以提昇職場競爭力，並訓練系統思考能力。而隨著人工智慧（AI）及物聯網（IoT）技術的快速發展，全球物聯網應用商業模式不斷創新，所衍生的商機無窮。根據國際研究調查機構IDC預測，二○二○年全球圍繞物聯網衍生的商機近一兆美元，其中扮演關鍵角色的是AI結合IoT所形成的「AIoT」新趨勢。
-    
-                                            為順應這一股發展趨勢，引發人們發想智慧服務創新創意的應用，國立高雄科技大學特別舉辦了 2020年全國大專院校智慧應用創新創意競賽。本次競賽目的為激發學生創新與創意發想，強化企劃力以提昇職場競爭力，並訓練系統思考能力。於本屆比賽在106支隊伍中，前三名加上佳作十組，入圍共達13組。而本校資訊工程系陳國益副教授帶領資訊工程系同學在此競賽中入圍兩組，榮獲第二名及一組佳作，共得獎金六千元，學生的產學與實作能力深獲肯定。
-                                            
-                                            陳國益副教授所指導的作品「Game & Watch 開發教具」榮獲該競賽第二名，該作品係由資訊工程系學生莊崴任、蔡昀庭、張廷嘉、尤琮閔、張敬典研發，為一款寓教於樂的作品，能夠幫助小學生可以更簡單的學會寫程式，透過使用視覺化的程式語言，讓使用者不需要非常熟悉程式也能夠自己編輯出遊戲，創作出屬於自己的遊戲來獲得成就感，利用玩遊戲的方式來引起小學生的興趣，在遊玩的過程中也能夠學習到程式的基礎以及增進邏輯思維。
-                                            
+
+                                            為順應這一股發展趨勢，引發人們發想智慧服務創新創意的應用，國立高雄科技大學特別舉辦了
+                                            2020年全國大專院校智慧應用創新創意競賽。本次競賽目的為激發學生創新與創意發想，強化企劃力以提昇職場競爭力，並訓練系統思考能力。於本屆比賽在106支隊伍中，前三名加上佳作十組，入圍共達13組。而本校資訊工程系陳國益副教授帶領資訊工程系同學在此競賽中入圍兩組，榮獲第二名及一組佳作，共得獎金六千元，學生的產學與實作能力深獲肯定。
+
+                                            陳國益副教授所指導的作品「Game & Watch
+                                            開發教具」榮獲該競賽第二名，該作品係由資訊工程系學生莊崴任、蔡昀庭、張廷嘉、尤琮閔、張敬典研發，為一款寓教於樂的作品，能夠幫助小學生可以更簡單的學會寫程式，透過使用視覺化的程式語言，讓使用者不需要非常熟悉程式也能夠自己編輯出遊戲，創作出屬於自己的遊戲來獲得成就感，利用玩遊戲的方式來引起小學生的興趣，在遊玩的過程中也能夠學習到程式的基礎以及增進邏輯思維。
+
                                             陳國益副教授所指導的作品「移動式智慧交通安全警示燈」榮獲該競賽佳作，該作品係由資訊工程系資訊工程系學生張惠深、張明和、劉宸佑、洪瑞廷、張廷嘉所研發，主要是為了與後方用路人溝通，讓後方用路人了解駕駛目前的行駛狀態，透過導航輔助顯示功能可在轉彎時自動於警示燈顯示預計移動的方向，解決許多人左右轉時忘記打方向燈的問題，也讓行人能因警示燈而提早判斷車輛的移動路徑，為行人與車輛在道路上的安全提供更多保障。
-                                            
+
                                             圖文提供：資工系陳國益老師
                                             <br>
-    
+
                                             <img src="images/news1-2.PNG" alt="">
                                             <img src="images/news1-3.PNG" alt="">
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-dismiss="modal">Close</button>
-    
+
                                         </div>
                                     </div>
                                 </div>
@@ -323,46 +440,51 @@
                 </div>
 
             </div>
-
+            <!-- End one news -->
+            <!-- one news -->
             <div class="my-3 col-12 col-lg-6">
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <img style="width: 100%;" src="images/news2-1.PNG" class="mr-3" alt="...">
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6" style="background-color: rgba(245, 245, 220, 0.856);">
                         <div class="media-body pb-3">
-                            <h5 class="mt-0">「績優領航。亮點聚焦」</h5>
+                            <h5 class="mt-0" style="font-weight: bold;color: rgb(173, 115, 38);">「績優領航。亮點聚焦」</h5>
                             <p>教育部自107學年度起積極推動教學實踐研究計畫，為首度推動之個人型教學研究計畫，旨在鼓勵教師透過觀察與挖掘教學現場問題
                             </p>
                             <!-- Button trigger modal -->
-                            <span style="cursor: pointer;position: absolute;bottom: 5%;right: 6%;" class="p-2 learn-more-btn badge badge-pill badge-warning"
-                                data-toggle="modal" data-target="#exampleModalCenter2">Learn More...</span>
-    
+                            <span style="cursor: pointer;position: absolute;bottom: 5%;right: 6%;"
+                                class="hvr-pop p-2 learn-more-btn badge badge-pill badge-warning" data-toggle="modal"
+                                data-target="#exampleModalCenter2">Learn More...</span>
+
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalCenterTitle">108學年度教育部教學實踐研究績優計畫 </h5>
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">108學年度教育部教學實踐研究績優計畫
+                                            </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
                                             教育部自107學年度起積極推動教學實踐研究計畫，為首度推動之個人型教學研究計畫，旨在鼓勵教師透過觀察與挖掘教學現場問題，重新檢視、定義及思考如何透過具創新性的教學模式導入，翻轉教學型態，並具體落實於教學現場。再者，循教學過程，採取合宜的評量工具及檢正方法，探討教學模式對教學端及學習端所產生之影響及效益，反思教學歷程，反饋教學改善，同步提升教學品質，有效促進學習成效。108學年度本校通過計畫件數計15案，經遴選公告本校計3案計畫於各學門評比中脫穎而出，獲選為108年度績優計畫，表現亮眼。教育亦部於3月8日辦理績優計畫公布記者會，表揚獲獎教師，本校休閒遊憩系顏宏旭副教授更受邀代表民生學門獲獎者上台受獎，教育部後續亦將績優計畫主持人納入計畫及升等審查人才庫，以鼓勵教師持續投入。
-    
-    休閒遊憩系顏宏旭副教授，以「誰來關心偏鄉高齡者的休憩生活?運用休憩生活軌跡地圖檢視偏鄉高齡者的休憩生活」為題，以真實世界中普遍存在的社會性議題，透過問題導向學習(Problem-based Learning)的課程設計引導學生思考該如何解決問題，並運用轉化教學實踐(Transforming Teaching Practice)引導演練休憩環境調查中常用到之方法，去了解偏鄉議題。藉由過程中的摸索、討論、演練與實務操作，轉化學習型態並增強學生自我學習能力。
-    
-    飛機工程系林中彥副教授，則以「高空長滯太陽能無人飛機教學之專案導向學習計畫」為題，轉化教師定位，以扮演學習促進者及環境營造者之角色，強調以學生為中心的合作式學習形式，鼓勵學習自主，激發學生潛能。該計畫團隊更參與由科技部補助之「2020綠能無人機創新大獎賽」，以整合太陽能與固定翼無人機等技術，跨域實踐具低耗能之優秀作品，一舉奪下「太陽能無人機-定翼機組」決賽第二名(第一名從缺)及成功往返龜山島(挑戰賽)第二名，是唯一挺進決賽並完成挑戰賽的學生隊伍。
-    
-    自動化工程系李政道副教授，規劃整合型教學模式，以「將STEM教育理念與產業需求研究融入跨年級同儕師徒制之教學實踐研究-應用於智慧機械與自動化人才培育」為題，聚焦實作課程中創造力與問題解決能力的提升，除導入STEM教育(Science科學、Technology科技、Engineering工程及Mathematics數學)及6E教學模式(Engage概念導入、Explore探索理解、Explain解釋與定義、Elaborate深度理解、Enrich深化經驗及Evaluate評量成果)外，更引入跨年級同儕師徒制的概念，在知識與技能的傳承和共學之間，建構有效的輔助學習管道，亦透過階段式驗證學習成效，兼顧所有學生學習品質。
-    
-    為積極鼓勵本校教師投入該項計畫，教學發展中心亦於109年起自組成立「教學創新與實踐研究教師社群」，邀請對該計畫有興趣的教師參與，定期辦理社群小聚及大師面對面講座活動，藉由同儕間的交流及專家學者的導引，協助預申請之教師對該計畫之內涵有更深入的理解，並融入自身專業整合教學設計、研究方法及評量機制等進行綜整性規劃，未來亦將持續透過各類增能活動的辦理，有效支持教師知能成長，建置穩定且具流動性之支援管道，創造知識共享及加值的最大化效益。
-    
-    績優領航，我們冀盼透過教學實踐研究計畫的推動，聚焦教學現場，創造師生得以一同成就學習的歷程，也創新未來教育的起點。
-    
-    圖文提供：教學發展中心/獲獎計畫主持人
+
+                                            休閒遊憩系顏宏旭副教授，以「誰來關心偏鄉高齡者的休憩生活?運用休憩生活軌跡地圖檢視偏鄉高齡者的休憩生活」為題，以真實世界中普遍存在的社會性議題，透過問題導向學習(Problem-based
+                                            Learning)的課程設計引導學生思考該如何解決問題，並運用轉化教學實踐(Transforming Teaching
+                                            Practice)引導演練休憩環境調查中常用到之方法，去了解偏鄉議題。藉由過程中的摸索、討論、演練與實務操作，轉化學習型態並增強學生自我學習能力。
+
+                                            飛機工程系林中彥副教授，則以「高空長滯太陽能無人飛機教學之專案導向學習計畫」為題，轉化教師定位，以扮演學習促進者及環境營造者之角色，強調以學生為中心的合作式學習形式，鼓勵學習自主，激發學生潛能。該計畫團隊更參與由科技部補助之「2020綠能無人機創新大獎賽」，以整合太陽能與固定翼無人機等技術，跨域實踐具低耗能之優秀作品，一舉奪下「太陽能無人機-定翼機組」決賽第二名(第一名從缺)及成功往返龜山島(挑戰賽)第二名，是唯一挺進決賽並完成挑戰賽的學生隊伍。
+
+                                            自動化工程系李政道副教授，規劃整合型教學模式，以「將STEM教育理念與產業需求研究融入跨年級同儕師徒制之教學實踐研究-應用於智慧機械與自動化人才培育」為題，聚焦實作課程中創造力與問題解決能力的提升，除導入STEM教育(Science科學、Technology科技、Engineering工程及Mathematics數學)及6E教學模式(Engage概念導入、Explore探索理解、Explain解釋與定義、Elaborate深度理解、Enrich深化經驗及Evaluate評量成果)外，更引入跨年級同儕師徒制的概念，在知識與技能的傳承和共學之間，建構有效的輔助學習管道，亦透過階段式驗證學習成效，兼顧所有學生學習品質。
+
+                                            為積極鼓勵本校教師投入該項計畫，教學發展中心亦於109年起自組成立「教學創新與實踐研究教師社群」，邀請對該計畫有興趣的教師參與，定期辦理社群小聚及大師面對面講座活動，藉由同儕間的交流及專家學者的導引，協助預申請之教師對該計畫之內涵有更深入的理解，並融入自身專業整合教學設計、研究方法及評量機制等進行綜整性規劃，未來亦將持續透過各類增能活動的辦理，有效支持教師知能成長，建置穩定且具流動性之支援管道，創造知識共享及加值的最大化效益。
+
+                                            績優領航，我們冀盼透過教學實踐研究計畫的推動，聚焦教學現場，創造師生得以一同成就學習的歷程，也創新未來教育的起點。
+
+                                            圖文提供：教學發展中心/獲獎計畫主持人
                                             <br>
                                             <img src="images/news2-2.PNG" alt="">
                                             <img src="images/news2-3.PNG" alt="">
@@ -380,13 +502,142 @@
                 </div>
 
             </div>
+            <!-- End one news -->
+            <!-- one news -->
+            <div class="my-3 col-12 col-lg-6">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <img style="width: 100%;" src="images/news3-2.PNG" class="mr-3" alt="...">
+                    </div>
+                    <div class="col-12 col-lg-6" style="background-color: rgba(245, 245, 220, 0.856);">
+                        <div class="media-body pb-3">
+                            <h5 class="mt-0" style="font-weight: bold;color: rgb(173, 115, 38);">應用競賽實作組亞軍</h5>
+                            <p>狂賀!! 本校自動化工程系陳建璋副教授指導團隊，獲得實作組亞軍
+                            </p>
+                            <!-- Button trigger modal -->
+                            <span style="cursor: pointer;position: absolute;bottom: 5%;right: 6%;"
+                                class="hvr-pop p-2 learn-more-btn badge badge-pill badge-warning" data-toggle="modal"
+                                data-target="#exampleModalCenter3">Learn More...</span>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">自動化工程系陳建璋老師
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            為鼓勵學子勇於投入創意與創新，加速通訊人才的培育，經濟部工業局每年舉辦「通訊大賽」，巨額獎金及高競爭吸引各大專校院師生以及國內外產業界高手共襄盛舉，並於2020年12月15日在中油大樓國光廳舉辦第十九屆通訊大賽，本屆大賽共分為四大競賽，分別是5G領航應用創新競賽、聯網未來挑戰賽、Connectivity
+                                            Innovation
+                                            Awards、5G多天線系統創新設計競賽。本校自動化工程系陳建璋副教授帶領自動化工程系學生組成的隊伍角逐大賽獎座，並於超過429之競賽隊伍及903位箇中好手中脫穎而出，獲得「5G領航創新應用競賽」實作組亞軍，老師及學生的能力備受肯定。
+                                            <br>
+                                            <img src="images/news3-2.PNG" alt="">
+                                            <img src="images/news3-3.PNG" alt="">
+                                            <img src="images/news3-4.PNG" alt="">
+                                            <img src="images/news3-5.PNG" alt="">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End one news -->
+            <!-- one news -->
+            <div class="my-3 col-12 col-lg-6">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <img style="width: 100%;" src="images/news4-1.PNG" class="mr-3" alt="...">
+                    </div>
+                    <div class="col-12 col-lg-6" style="background-color: rgba(245, 245, 220, 0.856);">
+                        <div class="media-body pb-3">
+                            <h5 class="mt-0" style="font-weight: bold;color: rgb(173, 115, 38);">2020 iWorld世界發明競賽</h5>
+                            <p> 本校飛機系航空電子組李榮全教授帶領團隊獲得2020 iWorld世界發明競賽特別獎及兩面金牌
+                            </p>
+                            <!-- Button trigger modal -->
+                            <span style="cursor: pointer;position: absolute;bottom: 5%;right: 6%;"
+                                class="hvr-pop p-2 learn-more-btn badge badge-pill badge-warning" data-toggle="modal"
+                                data-target="#exampleModalCenter4">Learn More...</span>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">
+                                                世界發明智慧財產聯盟總會（WIIPA）主辦的國際性科學競技平台
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            「iWorld世界發明競賽」是由世界發明智慧財產聯盟總會（WIIPA）主辦的國際性科學競技平台，於2020年12月11日及12日在高雄國際會議中心舉辦，共有來自世界各地7國參加競爭激烈，由全球各領域專業人士擔任評審團，針對發明作品理念、特點及市場潛力等進行評選，今年首屆辦理。
+
+                                            由李榮全老師帶領學生蔡維哲、林琪恩、陳以修、蔡博旭、洪子芹、徐詣娉參加此次iWorld世界發明競賽，參賽兩件作品為「航空物聯網」及「行動看護之智慧拐杖」奪得大會評審團所頒發的iWorld特別獎及兩面金牌。
+
+                                            作品「行動看護之智慧拐杖」獲得金牌，該作品應用感測器、網路通訊技術並結合物聯網的概念，提升老年人的行動定位與照護。
+
+                                            作品「航空物聯網」獲得金牌及特別，該作品應用無人機技術，並結合5G科技，不但能追蹤保育類動物，亦能及時觀察森林災害與防止盜伐、盜獵等不法行為。
+
+                                            圖文提供：飛機系李榮全老師
+                                            <br>
+                                            <img src="images/news4-2.PNG" alt="">
+                                            <img src="images/news4-3.PNG" alt="">
+                                            <img src="images/news4-4.PNG" alt="">
+                                            <img src="images/news3-5.PNG" alt="">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End one news -->
         </div>
     </div>
     <!-- End News -->
+    </div>
+
 
     <!-- Footer -->
-    <footer class="text-center bg-dark py-5">
-        <p class="text-white m-0">Copyright &copy; Your Website 2011</p>
+    <footer class="text-center bg-dark py-5 text-white">
+        <div class="container">
+            <div class="row" style="border-bottom: white 1px solid;">
+                <div class="col-lg-6">
+                    <div>校務資訊聯絡單位：秘書室 </div>
+                    <div>E-Mail：secretary@nfu.edu.tw</div>
+                    <div>電話：886-5-6315000 </div>
+                    <div>傳真：886-5-6315999</div>
+                </div>
+                <div class="col-lg-6">
+                    <div>地址：632301 雲林縣虎尾鎮文化路64號 No.64</div>
+                    <div> 版權聯絡單位：電算中心網路組 </div>
+                    <div>E-Mail：network@nfu.edu.tw</div>
+                    <div>若您對本站資料之版權有疑慮，請與網路組聯絡。</div>
+                </div>
+            </div>
+            <p class="text-white m-0">國立虎尾科技大學 National Formosa University &copy; All RIGHTS RESERVED.</p>
+        </div>
+
     </footer>
     <!-- End Footer -->
 
@@ -419,13 +670,9 @@
                 } else {
 
                     $(".navbar-scroll").removeClass("navbar-dark bg-dark fixed-top ")
-
                 }
-
             });
-
         })
-
     </script>
 </body>
 
